@@ -12,8 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
-
-# adding comments
 """configure script to get build parameters from user."""
 
 import argparse
@@ -33,8 +31,6 @@ except ImportError:
   from distutils.spawn import find_executable as which
 # pylint: enable=g-import-not-at-top
 
-# to the config
-
 _DEFAULT_CUDA_VERSION = '11'
 _DEFAULT_CUDNN_VERSION = '2'
 _DEFAULT_TENSORRT_VERSION = '6'
@@ -48,8 +44,6 @@ _TF_BAZELRC_FILENAME = '.tf_configure.bazelrc'
 _TF_WORKSPACE_ROOT = ''
 _TF_BAZELRC = ''
 _TF_CURRENT_BAZEL_VERSION = None
-
-# asfalsyjdfvopasyidfgv9pasidf
 
 NCCL_LIB_PATHS = [
     'lib64/', 'lib/powerpc64le-linux-gnu/', 'lib/x86_64-linux-gnu/', ''
