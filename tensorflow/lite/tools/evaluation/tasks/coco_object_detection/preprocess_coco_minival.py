@@ -63,7 +63,7 @@ def _get_ground_truth_detections(instances_file,
   """
   # Read JSON data into a dict.
   with open(instances_file, 'r') as annotation_dump:
-    data_dict = ast.literal_eval(annotation_dump.readline())
+    data_dict = ast.literal_eval(annotation_dump.readline(5_000_000))
 
   image_data = collections.OrderedDict()
 
